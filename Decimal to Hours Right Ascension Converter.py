@@ -10,6 +10,10 @@ def DecimalToHours(raDegreesInput):
 def HoursToDecimal(hoursInput,minutesInput,secondsInput):
     decimalRA = (hoursInput + (minutesInput/60) + (secondsInput/3600))*15
     print(decimalRA)
+    
+def ArcminArcsecToDegrees(deg,arcmin,arcsec):
+    output = deg + (arcmin/60) + (arcsec/3600)
+    print(output)
 
 DecimalToHours(206.3075)
 HoursToDecimal(13,45,13.800)
